@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="script.js" defer></script> <!-- ลิงค์ไปยังไฟล์ JavaScript -->
+</head>
+<body>
+    <div class="grid-container">
+        <div id="header">
+            <h3>Hello, It's me</h3>
+            <h1>Waratchaya Rasrichai</h1>
+            <h2>Welcome to my webpage!!</h2>
+        </div>
+
+        <!-- <input type="checkbox" id="toggle-nav-checkbox" /> -->
+
+        <!-- รูปภาพที่ใช้คลิกเพื่อแสดง nav -->
+        <!-- <label for="toggle-nav-checkbox">
+            <img src="pic/kiki.jpg" alt="Show Navigation" class="profile-pic" />
+        </label> -->
+
+        <div>
+            <nav id="left">
+                <p>
+                    <h3>Menu</h3>
+                    <a href="#profile">Profile</a>
+                    <a href="#skill">Skill</a>
+                    <a href="#work">Assignment</a>
+                    <a href="#project">Project</a>
+                </p>
+            </nav>
+            <div class="icon-container">
+                <img src="pic/menu.png" id="menu-icon" alt="Menu Icon" style="cursor: pointer;">
+            </div>
+        </div>
+
+        <div id="profile">
+            <h2>Waratchaya Rasrichai (kiki)</h2>
+            <h3>Education:</h3>
+            <p>Bachelor of Technology in Media Technology, King Mongkut's University of Technology Thonburi (KMUTT), Expected Graduation 2025. Currently pursuing a degree in Digital Media Technology.</p>
+            <h3>Hobby:</h3>
+            <p>In my free time, I enjoy watching movies, listening to music, and reading books.</p>
+           
+            <h3>Skill</h3>
+            <div class="skills">
+                <img src="pic/ai.png" title="Adobe Illustrator" />
+                <img src="pic/Animate.png" title="Adobe Animate" />
+                <img src="pic/arduino.png" title="Arduino IDE" />
+                <img src="pic/java.png" title="Javascript" />
+                <img src="pic/maya (1).png" title="Maya" />
+                <img src="pic/phoshop.png" title="Photoshop" />
+                <img src="pic/VR_code.png" title="Visual Studio Code" />
+            </div>
+        </div>
+                
+        <div id="profile-pic">
+            <img class = "profile-pic2" src="pic/kiki.jpg"  />
+            <h3>Contact:</h3>
+            <div class="icon">
+                <a href="https://www.instagram.com/warachaya_47?igsh=MTRlam9pNHE2OWlubg==" target="_blank">
+                    <img src="pic/ig_icon.png" alt="Instagram" >
+                </a>
+                <a href="mailto:waratchaya.rasr@mail.kmutt.ac.th">
+                    <img src="pic/email_icon.png" alt="Email" >
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100006688098914" target="_blank">
+                    <img src="pic/fB_icon.png" alt="Facebook" >
+                </a>
+            </div>
+        </div>
+        
+        <div id="work">
+            <h2>Assignment</h2>
+            <ul id="assignment-list">
+                <li><a href="assignment-3/recipe.html">Assign 3</a></li>
+                <li><a href="assignment4/recipe.html">Assign 4</a></li>
+                <li><a href="assignment5/index.html">Assign 5</a></li>
+                <li><a href="assignment6/register.html">Assign 6</a></li>
+                <li><a href="assignment7/index.html">Assign 7</a></li>
+                <li><a href="assignment8/index.html">Assign 8</a></li>
+            </ul>
+            <div id="project">
+                <h2>Project</h2>
+                <div class="video-container">
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/ZI1HP0eHlVw" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/Ssx-vLlJumI" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div id="Arduino_final">
+                    <video width="640" height="360" controls>
+                        <source src="Arduino_final.mp4" type="video/mp4">
+                    </video>
+                    <br>
+                    <a href="final_project/final_project_complete.ino"  download>Download Arduino Code Here</a>
+                </div>
+            </div>
+        </div>
+            
+        </main>
+    </div>
+</body>
+</html>

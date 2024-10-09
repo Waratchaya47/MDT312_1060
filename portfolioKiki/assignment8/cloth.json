@@ -1,0 +1,39 @@
+{
+	"top1":{
+		"brandname": "A.K.O.O Clothing",
+		"price":"200",
+		"pic":"top1.jpg"},
+	"top2":{
+		"brandname": "B.K.T Clothing",
+		"price":"500",
+		"pic":"top2.jpg"},
+	"top3":{
+		"brandname": "Jaja Clothing",
+		"price":"420",
+		"pic":"top3.jpg"},
+	"top4":{
+		"brandname": "K.O. Clothing",
+		"price":"300",
+		"pic":"top4.jpg"},
+	"top5":{
+		"brandname": "Kiao Clothing",
+		"price":"950",
+		"pic":"top5.jpg"},
+	"top6":{
+		"brandname": "Lila Clothing",
+		"price":"840",
+		"pic":"top6.jpg"},
+	"top7":{
+		"brandname": "Lukwha Clothing",
+		"price":"555",
+		"pic":"top7.jpg"},
+	"top8":{
+		"brandname": "A Clothing",
+		"price":"670",
+		"pic":"top8.jpg"},
+	"top9":{
+		"brandname": "Aka.Kiki Clothing",
+		"price":"710",
+		"pic":"top9.jpg"}
+	
+}
