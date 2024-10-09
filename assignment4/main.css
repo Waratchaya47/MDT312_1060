@@ -1,0 +1,139 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif; /* ใช้ฟอนต์ที่สอดคล้อง */
+    margin: 0; /* ลบ margin ของ body */
+    background-color: #f4f4f4; /* สีพื้นหลัง */
+    color: #333; /* สีตัวอักษร */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 25% auto 30%; /* แบ่งคอลัมน์ */
+    grid-gap: 10px; /* ช่องว่างระหว่างกริด */
+	
+}
+
+/* Header */
+#header {
+    grid-column: 1 / span 3;
+    background-color: #333; /* สีพื้นหลังของ Header */
+    color: white; /* สีตัวอักษรใน Header */
+    padding: 20px; /* ระยะห่างภายใน */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+}
+
+/* Main content areas */
+#main1 {
+    grid-column: 1 / span 1;
+    text-align: left; /* จัดข้อความให้ชิดซ้าย */
+}
+
+#main2 {
+    grid-column: 2 / span 1;
+    text-align: left; /* จัดข้อความให้ชิดซ้าย */
+}
+
+#right {
+    grid-column: 3 / span 1;
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+	margin-top:30%;
+}
+
+/* Footer */
+#footer {
+    grid-column: 1 / span 3;
+    background-color: #222; /* สีพื้นหลังของ Footer */
+    color: white; /* สีตัวอักษรใน Footer */
+    padding: 10px; /* ระยะห่างภายใน */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: auto 65%; /* เปลี่ยนโครงสร้างกริด */
+    }
+
+    #header {
+        grid-column: 1 / span 2; /* Header ยืดออก */
+    }
+    #main2 {
+        grid-column: 2 / span 1; /* กริดด้านขวา */
+    }
+    #right {
+        grid-column: 1 / span 2; /* ย้าย Grid */
+		margin-top:5%;
+
+    }
+
+    #footer {
+        grid-column: 1 / span 2; /* Footer ยืดออก */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: auto; /* เปลี่ยนกริดให้เป็น 1 คอลัมน์ */
+    }
+    #header,
+    #right,
+    #main2,
+    #footer {
+        grid-column: 1 / span 1; /* ยืดออก */
+    }
+}
+
+/* Flex container for images */
+.flex_container {
+    display: flex;
+    flex-wrap: wrap; /* ทำให้ภาพจัดเรียงเป็นหลายแถว */
+    justify-content: center; /* จัดให้ภาพอยู่กลาง */
+    width: 100%; /* กว้างเต็มที่ */
+}
+
+.flex_container > div {
+    width: 200px; /* กำหนดความกว้างของแต่ละ div */
+    margin-left: 50px; /* ระยะห่างซ้าย */
+    margin-bottom: 10px; /* ระยะห่างด้านล่าง */
+}
+
+.pic {
+    width: 100%; /* ขนาดเต็ม */
+    margin: auto; /* จัดให้อยู่กลาง */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+}
+
+img {
+    margin: auto; /* จัดให้ภาพอยู่กลาง */
+    width: 70%; /* ขนาดภาพ */
+	border-radius: 20%;
+}
+
+p {
+    margin-left: 10px; /* ระยะห่างด้านซ้าย */
+}
+
+/* Heading styles */
+h1 {
+    border: 5px dashed gray; /* ขอบเส้นประ */
+    border-radius: 20px; /* มุมมน */
+    color: white; /* สีตัวอักษร */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* ฟอนต์ */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+    padding: 20px; /* ระยะห่างภายใน */
+    width: 500px; /* ความกว้าง */
+    margin: auto; /* จัดให้อยู่กลาง */
+}
+
+h2, h3 {
+    color: rgb(0, 0, 0); /* สีตัวอักษร */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+    padding: 20px; /* ระยะห่างภายใน */
+    margin: auto; /* จัดให้อยู่กลาง */
+}
+
+/* Picture styles */
+.pic2 {
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+    margin: auto; /* จัดให้อยู่กลาง */
+}

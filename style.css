@@ -1,0 +1,180 @@
+/* ตั้งค่า Grid สำหรับ container หลัก */
+.grid-container {
+    display: grid;
+    grid-template-columns: 25% auto 25%; 
+    /* grid-template-rows: auto 1fr auto; */
+    gap: 1%; /* ช่องว่างระหว่างกริด */
+}
+
+#header {
+    grid-column: 1 / span 3; 
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top; /* จัดเนื้อหาให้อยู่กลางทางแนวตั้ง */
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0; /* เว้นระยะห่างระหว่างลิงก์ */
+    background-color: #444; /* สีพื้นหลังของลิงก์ */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    transition: background-color 0.3s ease;
+}
+
+main {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+#left{
+    grid-column: 1/ span 1;
+}
+
+#profile {
+    grid-column: 2 / span 1;
+    margin-left: 3%;
+}
+#profile-pic{
+    margin-top: 20%;
+    grid-column: 3 / span 1;
+}
+
+.profile-pic2 {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.icon {
+    display: flex; /* ใช้ Flexbox สำหรับจัดเรียงไอคอน */
+    justify-content: center; /* จัดให้อยู่กลางแนวนอน */
+    align-items: center; /* จัดให้อยู่กลางแนวตั้ง */
+    margin-top: -5%; /* เพิ่มระยะห่างด้านบน */ 
+}
+.icon img {
+    margin: 10px;
+    width: 40px;
+    object-fit: contain;
+}
+
+.skills {
+    display: flex; /* ใช้ Flexbox สำหรับจัดเรียงภาพทักษะ */
+    justify-content: center; /* จัดให้อยู่กลางแนวนอน */
+    flex-wrap: wrap; /* ทำให้ภาพทักษะจัดเรียงเป็นหลายแถว */
+}
+.skills img {
+    margin: 10px;
+    margin-top: 0;
+    width: 50px;
+    object-fit: contain;
+}
+
+#work {
+    grid-column: 1 / span 3;
+    margin-top: 2%; /* ระยะห่างด้านบน */
+    text-align: center;
+}
+
+#assignment-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#assignment-list li {
+    background-color: #444;
+    margin: 10px 15%;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+#assignment-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.icon-container img{
+    width: 5%;
+    left: 2%;
+    top: 2%;
+    position: fixed;
+}
+
+@media only screen and (max-width: 768px) {
+	.grid-container {
+		display: grid;
+        grid-template-columns: auto 35%  ;
+        grid-gap: 10px;  
+	}
+
+	#header{
+		grid-column: 1 / span 2;
+	}
+	
+    #left {
+        /* grid-column: 1 / span 2; */
+        display: none; /* ซ่อนเมนู Navigation */
+        position: fixed; /* ทำให้ติดกับหน้าจอ */
+        top: 0;
+        left: 0;
+        width: 20%; /* ความกว้างของเมนู */
+        height: 100%; /* ความสูงเต็มหน้าจอ */
+        background-color: #222; /* สีพื้นหลังของเมนู */
+        z-index: 1000; /* เพื่อให้เมนูอยู่เหนือเนื้อหาอื่น */
+        transition: transform 0.3s ease; /* เพิ่มการเปลี่ยนแปลงแบบเรียบ */
+    }
+    #left.show {
+        display: block; /* แสดงเมนู Navigation เมื่อมี class 'show' */
+    }
+	#profile{
+		grid-column: 1 / span 1;
+	}
+	
+	#profile-pic{
+		grid-column: 2 / span 1;
+        margin-left: 2%;
+	}
+    #work{
+		grid-column: 1 / span 2;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.grid-container {
+		display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+		 
+	}
+	#header{
+		grid-column: 1 / span 1;
+	}
+	
+	#profile-pic{
+		grid-column: 1 / span 1;
+        width: 40%;
+        margin: auto;
+	}
+    #work{
+		grid-column: 1 / span 1;
+	}
+}
